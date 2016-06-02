@@ -1,3 +1,28 @@
+GIT
+  remote: https://github.com/OzGuild/typescript-node-ruby.git
+  revision: 0e038112e0c1d6bd72af37a31fe2311a82a35e56
+  branch: tsx-support
+  specs:
+    typescript-node (1.6.2)
+      typescript-src (~> 1.6.2)
+
+GIT
+  remote: https://github.com/OzGuild/typescript-rails.git
+  revision: 7ce1d07093b5a16c4bba9330a110f41da92ec9f5
+  branch: tsx-support
+  specs:
+    typescript-rails (0.6.2)
+      railties
+      tilt
+      typescript-node (>= 1.6.2)
+
+GIT
+  remote: https://github.com/OzGuild/typescript-src-ruby.git
+  revision: f3b17f052b04564930e2e779fca3be6004670b27
+  branch: 1.8.10
+  specs:
+    typescript-src (1.6.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -141,13 +166,6 @@ GEM
     tilt (2.0.4)
     turbolinks (2.5.3)
       coffee-rails
-    typescript-node (1.6.2)
-      typescript-src (~> 1.6.2)
-    typescript-rails (0.6.2)
-      railties
-      tilt
-      typescript-node (>= 1.6.2)
-    typescript-src (1.6.2.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (3.0.0)
@@ -173,7 +191,9 @@ DEPENDENCIES
   spring
   sqlite3
   turbolinks
-  typescript-rails
+  typescript-node!
+  typescript-rails!
+  typescript-src!
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
 

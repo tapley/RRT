@@ -24,7 +24,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Enable typescript
-gem 'typescript-rails'
+gem 'typescript-rails', :git => "https://github.com/OzGuild/typescript-rails.git", :branch => "tsx-support"
+gem 'typescript-node', :git => "https://github.com/OzGuild/typescript-node-ruby.git", :branch => "tsx-support"
+gem 'typescript-src', :git => "https://github.com/OzGuild/typescript-src-ruby.git", :branch => "1.8.10"
 
 # Enable React.js
 gem 'react-rails'
