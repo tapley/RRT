@@ -1,7 +1,8 @@
 class Api::CommentsController < ApplicationController
 
-	def create
-		render json: Comment.create(text: params[:text], author: params[:author])
+	def create		
+		Comment.create(text: params[:text], author: params[:author])
+		render json: Comment.all
 	end
 
 	def index
