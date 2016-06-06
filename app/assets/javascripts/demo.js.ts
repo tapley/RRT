@@ -1,4 +1,3 @@
-// let helloWorld = <string>"Hello world!"
 let helloWorld = "Hello world!" as string
 
 function demoShout(message: string): void {

@@ -33,7 +33,7 @@ class C9CommentList extends React.Component<any, any> {
         {commentNodes}
       </div>
     );
-  }
+  };
 };
 
 class C9CommentForm extends React.Component<any, any> {
@@ -41,7 +41,7 @@ class C9CommentForm extends React.Component<any, any> {
   constructor() {
     super()
     this.state = { author: '', text: '' }
-  }
+  };
   handleAuthorChange(e) {
     this.setState({author: e.target.value});
   };
@@ -76,7 +76,7 @@ class C9CommentForm extends React.Component<any, any> {
         <input type="submit" value="Post" />
       </form>
     );
-  }
+  };
 };
 
 
